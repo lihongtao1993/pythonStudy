@@ -1,6 +1,7 @@
  # 定义玩家和电脑出拳值
+import random
 player = int(input("请出拳，1：石头，2剪刀，3：布"))
-computer = 1
+computer = random .randint(1,3)
  # 判断胜负
 if (
     (player == 1 and computer == 2)
