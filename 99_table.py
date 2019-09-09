@@ -1,4 +1,8 @@
+import function.test
+
+function.test.table()
 # 输出99乘法表
+print()
 i = 1
 while i <= 9:
     j = 1
