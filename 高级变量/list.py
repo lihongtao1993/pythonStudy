@@ -54,3 +54,23 @@ print(name_list.count("jane"))
 # clear方法，清空列表
 name_list.clear()
 print(name_list)
+
+
+# 列表排序
+# 升序：.sort     降序 .sort(revers)
+Name_list = ["wangxiaoer","wangwu","ahui","huangchao"]
+Name_list.sort()
+print(Name_list)
+Name_list.sort(reverse=True)
+print(Name_list)
+
+number = [12, 2, 34, 38, 22, 13, 45, 23]
+
+number.sort(reverse=False)
+
+print(number)
+
+
+for name in Name_list:
+    print("名字是%s" %name)
+
