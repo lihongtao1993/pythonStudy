@@ -4,7 +4,7 @@ personal_info = {"name": "xiaoming",
                  "height": "180cm",
                  "weight": 68.3
                  }
-# 取字典的值
+# 取字典的值，使用字典名[key]
 name = personal_info["name"]
 print(name)
 
