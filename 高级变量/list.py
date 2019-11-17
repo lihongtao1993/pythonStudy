@@ -78,9 +78,35 @@ import random
 teacher_name = ["A", "B", "C", "D", "E", "F", "G", "H"]
 offices = [[], [], []]
 
-i = 0
-while i < len(teacher_name):
-    offices[random.randint(0, 2)].append(teacher_name[i])
-    i += 1
+# i = 0
+# while i < len(teacher_name):
+#     offices[random.randint(0, 2)].append(teacher_name[i])
+#     i += 1
+#
+# print(offices)
+
+# for teacher in  teacher_name:
+#     office_num = random.randint(0, 2)
+#     office_len = len(offices[office_num])
+#     if office_len >=3:
+#         continue
+#     offices[office_num].append(teacher )
+#
+# print(offices)
+
+
+#随机分配，每个办公室最多3个
+
+
+x = 0
+while x < 8: # 这里的8是数组最开始的长度
+    j = x // 3 # 每隔3个换一个办公室+1
+    i = random.randint(0, len(teacher_name)-1) #从剩余的老师中随机取一个
+    offices[j].append(teacher_name[i])
+    teacher_name.pop(i) #删除已经选中的老师
+    # print(teacher_name)
+    x += 1
 
 print(offices)
+
+
