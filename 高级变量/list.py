@@ -110,4 +110,3 @@ while x < 8: # 这里的8是数组最开始的长度
 
 print(offices)
 
-
