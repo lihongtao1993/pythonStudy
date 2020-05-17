@@ -31,4 +31,3 @@ def ca(a,b):
         print(a/b)
     else:
         print("输入正确的运算符")
-ca(8,4)
