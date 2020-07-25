@@ -33,6 +33,9 @@ class Soldier:
 
     def fire(self):
         # 士兵开枪
+        # is用来判断两个变量引用的对象是不是同一个(内存地址是否相等）
+        # ==用来判断两个变量的值是否相等，
+        # 在python中针对None的比较，建议使用is
         if self.gun is None:
             print("%s没有枪,请用拳头" % self.name)
             return
@@ -46,6 +49,6 @@ ak47 = Gun("AK47")
 # ak47.add_bullet(0)
 # ak47.fire()
 
-xusanduo = Soldier("许三多", None)
+xusanduo = Soldier("许三多", ak47)
 
 xusanduo.fire()
