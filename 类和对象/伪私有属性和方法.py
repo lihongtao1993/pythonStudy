@@ -13,6 +13,8 @@ class Women:
 
 xiaofang = Women("小芳", 18)
 
+# 在ptython中私有属性和方法是通过修改了属性或方法名来变成私有的，修订的方式是：在前面加上：_类名
+
 print(xiaofang._Women__age)
 xiaofang._Women__secret()
 
