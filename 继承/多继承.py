@@ -18,9 +18,9 @@ class Superclass2:
 # 多继承
 class son(Superclass1, Superclass2):
     def __init__(self):
-        super().__init__()
+        Superclass1.__init__(self)
         Superclass2.__init__(self)
-        self.name = "test+demo"
+        self.name = "%s+%s" % (self.Fname, self.Mname)
 
 Mike = son()
 #
